@@ -11,8 +11,7 @@ def my_each(array)
   array
 end
 
-
-
+my_each(["aa", "ab", "ac"]) {|i| puts i}
 
 
 
