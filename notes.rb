@@ -38,3 +38,19 @@ hello_t(["Tim", "Tom", "Jim"]) do |name|
   end
 end
 
+
+
+def yielding_with_arguments(num)
+  puts "the program is executing the code inside the method"
+  yield(num)
+  puts "now we are back in the method"
+end
+We can call #yielding_with_arguments by providing both an argument and a block containing a placeholder, |i| in the following example, which will accept the argument passed to yield:
+
+yielding_with_arguments(2) {|i| puts i * 2}
+We call our method with an argument:
+
+yielding_with_arguments(2)
+and a block:
+
+{ |i| puts i * 2 }
