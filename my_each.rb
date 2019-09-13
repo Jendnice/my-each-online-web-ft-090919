@@ -11,7 +11,7 @@ def my_each(array)
 end
 
 ["aa", "ab", "ac"]
-my_each(["a", "b", "c"]) do |letters|
+my_each(["aa", "ab", "ac"]) do |letters|
   if letters.start_with?("a")
     puts letters
   end 
